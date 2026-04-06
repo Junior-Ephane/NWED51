@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <title>SERVICE MARKET</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="popUp.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;1,300;1,600&display=swap" rel="stylesheet">
+    
+
+</head>
+
+<body class="body">
+<div class="header">
+<div class="container">
+<div class="navbar">
+        <div class="logo">
+                <a href="homepage.html"> 
+                        <img src="logo.jpg" width="125px" class="logo-image">
+                </a>
+        </div>
+
+        <nav>
+                
+                <ul class="nav">
+        <div class="search-container">
+                        <input type="text" id="Search" placeholder="Search">
+        </div>
+                        <li> <a href="homepage.html"> Home</a> </li>
+                        <li> <a href="about.html">About</a> </li>
+                        <li> <a href="contacts.html">contacts</a></li>
+                </ul>
+               
+        
+        </nav>
+</div>
+
+<div class="row">
+        <div class="col-1">
+                <div class="texts">
+                        <h1> your trusted service providers</h1>
+                        <p> A one stop website for all your needs
+                        <br>if you want it we probably have it!!!</p>
+                        <a href="" class="btn">explore now &#8594;</a>
+                </div>
+        </div>
+        
+        <div class="col-1">
+
+                <img src="image1.jpg" >
+
+        </div>
+
+</div>
+
+        
+</div>
+</div>
+ 
+<div class="categories">
+        <div class="category-container">
+           <div class="row">
+
+                <div class="col-2">
+                                <img src="category.jpg">
+                        </div>
+                <div class="col-2">
+                                <img src="category.jpg">
+                        </div>
+                        <br>
+                <div class="col-2">
+                                <img src="category.jpg">
+                        </div>
+                
+
+           </div>
+        </div>
+
+</div>
+
+<div class="category-containerr">
+
+        <h2 class="title">Featured Categories</h2>
+        <div class="row">
+
+                <div class="col-3">
+                        <img src="haircut.png">
+                        <h4>Hair Cuts</h4>
+                        <p>R50</p>
+                </div>
+
+                <div class="col-3">
+                     <a href="haircut.html">
+                        <img src="haircut.png">
+                     </a>
+                        <h4>Hair Cuts</h4>
+                        <p>R50</p>
+                </div>
+
+                <div class="col-3">
+                        <img src="haircut.png">
+                        <h4>Hair Cuts</h4>
+                        <p>R50</p>
+                </div>
+
+                <div class="col-3">
+                        <img src="haircut.png">
+                        <h4>Hair Cuts</h4>
+                        <p>R50</p>
+                </div>
+
+        </div>
+
+</div>
+
+
+
+<script>
+
+    let lastScrollY = window.scrollY;
+
+    window.addEventListener('scroll', function() {
+        const navbar = document.querySelector('.navbar');
+        
+       
+        if (window.scrollY > 50) {
+            navbar.classList.add('compact');
+        } else {
+            navbar.classList.remove('compact');
+        }
+
+        if (window.innerWidth <= 768) {
+            
+            if (window.scrollY > lastScrollY && window.scrollY > 100) {
+                navbar.classList.add('hide-mobile');
+            } 
+   
+            else {
+                navbar.classList.remove('hide-mobile');
+            }
+        } else {
+            navbar.classList.remove('hide-mobile');
+        }
+        
+      
+        lastScrollY = window.scrollY;
+    });
+</script>
+
+
+
+</body>
+
+<div class="footer">
+                <p>&copy; 2026 [Kim Service Market]. All rights reserved.</p>
+    <div class="footernav">
+        <nav>
+                <a href="#" >Privacy Policy</a> | 
+                <a href="#" >Terms of Service</a> | 
+                <a href="#" >Contact Us</a>
+
+                <h4>Follow Us On</h4>
+<a href="#" class="social-link">LinkedIn</a>
+<a href="#" class="social-link">Twitter</a>
+        </nav>
+    </div>
+</div>
+</html>

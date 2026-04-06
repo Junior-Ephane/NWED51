@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 
+    
+}
+
+  /* This is for backgrounding the color, and defining the login */
+
+body{                       
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(0deg, #fff 0%, #ca1515 150%);
+    overflow: hidden;
+    
+}
+
+.background{           /* This is for positioning the login */
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+    
+}
+
+/* This is for styling the login card, and giving it a card around it */
+
+.login-card{
+    
+    
+    border-radius: 15px;
+    padding: 40px;
+    animation: fadeIn 1.2s ease;
+    
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;transform: translateY(20px);
+    }
+    to{
+        opacity: 1;transform: translateY(0);
+    }
+}
+
+/* This is where you adjust the shape of the login-card */
+
+.login-card h2{
+    margin-bottom: 25px;
+    text-align: center;
+    font-weight: 700;
+    color: white;
+    
+}
+
+.input-box{
+     margin-bottom: 20px;
+    position: relative;
+}
+
+/* This give the input-boxes shape */
+
+.input-box input{
+    width: 100%;
+    padding: 14px 16px;
+    border: none;
+    outline: none;
+    background:#2B6CB0;
+    color: white;
+    font-size: 16px;
+    border-radius: 12px;
+    transition: all 0.3s ease;    
+
+}
+
+
+/* This is to put focus when the user starts typing on the ligin box */
+
+.input-box input:focus{
+    background-color: #2B6CB0;
+    box-shadow: 0 0 10px #f7bcbc;
+    transform: scale(1.02);
+
+}
+
+/* This is where you add your card-features, and how the text should appear inside */
+
+.input-box label{
+    position: absolute;
+    left: 16px;
+    top: 14px;
+    color: ghostwhite;
+    pointer-events: none;
+    transition: 0.3s ease;
+    font-size: 15px;    
+
+}
+
+.input-box input:focus+label,.input-box input:valid+label{
+    padding: 0 6px; 
+    background: rgb(30,30,47,0.9);
+    color: white;
+    border-radius: 4px;
+    font-size: 12px; 
+    top: -8px; 
+    left: 12px; 
+        
+}
+
+.login-button{
+    padding: 10px; 
+    width: 100%; 
+    border: none;
+    border-radius: 12px;    
+    background-color: #71b7e6;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3 ease;
+    margin-top: 10px;
+} 
+
+/* This is where you style the text (Don't have an account and Sign in) */
+
+.login-card p{
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+}
+
+.login-card p a{
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+    
+}
+
+
+.login-button:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px orangered;
+}
+
+button {
+  background-color: #2B6CB0;
+  color: #FFFFFF;
+  border-radius: 8px;
+  padding: 12px;
+  font-weight: bold;
+  border: none;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #1A4971; /* Darkens on hover for a pro feel */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

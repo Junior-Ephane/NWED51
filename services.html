@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <title>SERVICE MARKET</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="popUp.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;1,300;1,600&display=swap" rel="stylesheet">
+    
+
+</head>
+
+<body class="body">
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="homepage.html"> 
+                        <img src="Images/logo.jpg" width="125px" class="logo-image">
+                    </a>
+                </div>
+
+                <nav>
+                    <ul class="nav">
+                        
+                        <div class="search-container">
+                        <input type="text" id="Search" placeholder="Search For Service">
+                        <button>Search</button>
+                        </div>
+
+
+                        <li> <a href="homepage.html"> Home</a> </li>
+                        <li> <a href="services.html">Services</a></li>
+                        <li> <a href="about.html">About</a> </li>
+                        <li> <a href="contacts.html">contacts</a></li>
+                        
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="row">
+                <div class="col-1">
+                    <div class="texts">
+                        <h1>Your Trusted Service Marketplace</h1>
+                        <p> A One Stop Website For All Your Needs
+                        <br>Quality services, verified providers, all in one platform!!!</p>
+                        <a href="" class="btn">explore now &#8594;</a>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+    </div>
+ 
+
+    <div class="category-containerr">
+        <h2 class="title">Available Businesses</h2>
+        <div id="card-container" class="row">
+            </div>
+    </div>
+
+    <div id="businessModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 id="modalTitle">Business Name</h2>
+
+            <div class="slideshow-container">
+                <div id="slideshowWrapper">
+                    </div>
+                
+                <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                <a class="next" onclick="changeSlide(1)">&#10095;</a>
+            </div>
+
+            <div class="modal-details">
+                <p id="modalService"></p>
+                <p id="modalRate" style="font-weight:bold; color: #ff523b;"></p>
+                <p id="modalContact"></p>
+                <br>
+                <p><strong>About us:</strong> We are dedicated to providing the best service in the area. Contact us today to book an appointment!</p>
+                <button class="btn" style="width:100%; margin-top:10px;">Message Now</button>
+            </div>
+        </div>
+    </div>
+
+    
+    <footer class="footer">
+        <div class="footernav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="#">Services</a>
+        </div>
+        
+        <div class="footernav">
+            <h4>Connect With Us</h4>
+            <a href="#" class="social-link">Facebook</a>
+            <a href="#" class="social-link">Twitter</a>
+            <a href="#" class="social-link">Instagram</a>
+        </div>
+        
+        <p style="margin-top: 30px; color: #64748B; font-size: 13px;">
+            &copy; 2026 The Service Market. All rights reserved.
+        </p>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
